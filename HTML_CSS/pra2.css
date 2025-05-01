@@ -15,8 +15,8 @@
   
   .top-wrapper {
     padding: 180px 0 100px 0;  /*上右下左の順番*/
-    /*background-image: url(https://prog-8.com/images/html/advanced/top.png);*/
-    /*background-size: cover;  /*ブロックサイズに合うように画像調整*/
+    background-image: url(https://prog-8.com/images/html/advanced/top.png);
+    background-size: cover;  /*ブロックサイズに合うように画像調整*/
     color: black;
     text-align: center;   /*テキストやインラインボタンを中央ぞろえ（margin autoはブロックで使う）*/
   }
@@ -72,6 +72,9 @@
     height: 65px;
     width: 100%;
     background-color: rgba(34, 49, 52, 0.9);
+    position:fixed;
+    top:0;
+    z-index:10;  /*z軸方向、図の重なりを制御。整数値で大きければ上にくる*/
   }
   
   .logo {
@@ -163,4 +166,17 @@
     box-shadow:none;   /*適用していたCSSをなくす、none*/
     position:relative; /*「absoluteの基準として」も使えるが、「topやrightをセットで書いて、元の位置からずらす」こともできる*/
     top:7px;
+  }
+
+  footer img {
+    width: 125px;
+  }
+  
+  footer p {
+    color: #b3aeb5;
+    font-size: 12px;
+  }
+  
+  footer {
+    padding-top: 30px;
   }
