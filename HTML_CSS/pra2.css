@@ -1,0 +1,145 @@
+  body {
+    margin: 0;
+    font-family: "Hiragino Kaku Gothic ProN";
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .container {
+    width: 1170px;
+    padding: 0 15px;  /*上下 左右　の順番*/
+    margin: 0 auto;  /*ブロックを中央ぞろえ。左右のマージンをオート調整*/ 
+  }
+  
+  .top-wrapper {
+    padding: 180px 0 100px 0;  /*上右下左の順番*/
+    /*background-image: url(https://prog-8.com/images/html/advanced/top.png);*/
+    /*background-size: cover;  /*ブロックサイズに合うように画像調整*/
+    color: black;
+    text-align: center;   /*テキストやインラインボタンを中央ぞろえ（margin autoはブロックで使う）*/
+  }
+  
+  .top-wrapper h1 {
+    opacity: 0.7;  /*透明度　0~1*/
+    font-size: 45px;
+    letter-spacing: 5px;
+  }
+  
+  .top-wrapper p {
+    opacity: 0.7;
+  }
+  
+  .btn {
+    padding: 8px 24px;
+    color: white;
+    display: inline-block;
+    opacity: 0.8;
+    border-radius: 4px;
+  }
+  
+  .btn:hover {  /*class名に:hoverをつけると、カーソルが上にあるときの条件付きCSSを指定可*/
+    opacity: 1;
+  }
+  
+  .signup {
+    background-color: #239b76;
+  }
+  
+  .facebook {
+    background-color: #3b5998;
+    margin-right: 10px;
+  }
+  
+  .twitter {
+    background-color: #55acee;
+  }
+  
+  .btn-wrapper {
+    margin: 20px 0;
+  }
+  
+  .btn-wrapper p {
+    margin: 10px 0;
+  }
+  
+  .fa{
+    margin-right:5px;
+  }
+  
+  header {
+    height: 65px;
+    width: 100%;
+    background-color: rgba(34, 49, 52, 0.9);
+  }
+  
+  .logo {
+    width: 124px;
+    margin-top: 20px;
+  }
+  
+  .header-left {
+    float: left;
+  }
+  
+  .header-right {
+    float: right;
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: all 0.5s; /*hoverしたときとかに状態が変わるための時間*/
+  }
+  
+  .header-right:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  
+  .header-right a {
+    line-height: 65px;
+    padding: 0 25px;
+    color: white;
+    display: block;
+  }
+  
+  .lesson-wrapper {
+    height: 500px;
+    padding-bottom: 80px;
+    background-color: #f7f7f7;
+    text-align:center;
+  }
+  
+  .heading {
+    padding-top: 60px;
+    padding-bottom: 30px;
+    color: #5f5d60;
+  }
+  
+  .heading h2 {
+    font-weight: normal;
+  }
+  
+  .lesson {
+    float: left;
+    width: 25%;  /*親要素に対する割合指定できる*/
+  }
+  
+  .lesson-icon{
+    position:relative;
+  }
+  
+  
+  .lesson-icon p{
+    position:absolute;   /*絶対的な位置指定。通常はページの左上からの距離だが、positionをrelatievにした親要素からの距離でも使える*/
+    top:80px;
+    width:100%;
+    color:white;
+  }
+  
+  
+  .txt-contents{
+    width:80%;
+    display:inline-block;
+    margin-top:20px;
+    font-size:12px;
+    color:#b3aeb5;
+  }
+  
