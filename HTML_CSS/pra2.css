@@ -17,7 +17,7 @@
     padding: 180px 0 100px 0;  /*上右下左の順番*/
     background-image: url(https://prog-8.com/images/html/advanced/top.png);
     background-size: cover;  /*ブロックサイズに合うように画像調整*/
-    color: black;
+    color: white;
     text-align: center;   /*テキストやインラインボタンを中央ぞろえ（margin autoはブロックで使う）*/
   }
   
