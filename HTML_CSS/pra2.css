@@ -143,3 +143,24 @@
     color:#b3aeb5;
   }
   
+  .heading h3 {
+    font-weight: normal;   /*太字がbold h1とかはデフォルトがboldだからnormalにもどすときはこれ*/
+  }
+  
+  .message-wrapper {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 80px;
+    text-align: center;
+  }
+  
+  .message {
+    padding: 15px 40px;
+    background-color: #5dca88;
+    box-shadow: 0 7px #1a7940;    /*ボックスに影を付ける。この場合右に0 下に7px*/
+  }
+  
+  .message:active{  /*activeは、クリックされているときの条件つきでCSS適用*/
+    box-shadow:none;   /*適用していたCSSをなくす、none*/
+    position:relative; /*「absoluteの基準として」も使えるが、「topやrightをセットで書いて、元の位置からずらす」こともできる*/
+    top:7px;
+  }
