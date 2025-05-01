@@ -1,19 +1,84 @@
+body {
+    font-family: "Avenir Next";/*フォントの種類*/
+  }
+  
+  li {/*全体のliに適用*/
+    list-style: none;
+  }
+  
+  .header {
+    background-color: #26d0c9;
+    height: 90px;
+  }
+  
+  .header-logo{
+    font-size:36px;
+    float:left;
+    padding:20px 40px;
+  }
+  
+  .header-list li{/*header-list内のliに適用*/
+    float:left;/*改行無しで横ならびに*/    
+    padding:33px 20px;/*上下の余白 左右の余白*/
+  }
 
-.header{
-    background-color:#ebe12670;
-    height:80px;
-}
+  .main {
+    padding:100px 80px;
+  }
 
-.main{
-    background-color:#88dc8892;
-    height:500px;
+  .copy-container h1{
+    font-size:140px;
 
-}
-.headertitle{
-    color:#0000ff;
-}
+  }
+
+  .copy-container span{
+    color:#ff4a4a;
+  }
+
+  .copy-container h2{
+    font-size:60px;
+  }
 
 
-.title{
-    color:#ff0000;
-}
+  
+  .section-title {/*contentsとcontact-formの中の二つのh3 section-titleに適用*/
+    border-bottom: 2px solid #dee7ec;
+    font-size: 28px;
+    padding-bottom: 15px;
+    margin-bottom: 50px;
+  }
+
+  input, textarea{/*inputとtextarea両方のclassにこのCSSを適用*/
+    width:400px;
+    margin-top:10px;
+    margin-bottom:30px;
+    padding:20px;
+    font-size:18px;/*inputされる文字のfontsize*/
+    border:1px solid #dee7ec;
+  }
+
+  .contact-submit{
+    background-color:dee7ec;
+    color:#889eab;
+  }
+
+
+  .footer {
+    background-color: #2f5167;
+    color:#fff;
+    height: 120px;
+    padding:40px;
+  }
+
+  .footer-logo{
+    font-size:32px;
+    float:left;
+  }
+
+  .footer-list{
+    float:right;
+  }
+
+  .footer-list li{
+    padding-bottom:20px ;
+  }
